@@ -1,10 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
 
-import Bitter from './fonts/bitter-v28-latin-regular.woff';
-import Bitter2 from './fonts/bitter-v28-latin-regular.woff2';
-import Montserrat from './fonts/montserrat-v25-latin-regular.woff';
-import Montserrat2 from './fonts/montserrat-v25-latin-regular.woff2';
+import BitterRegular from '../../public/fonts/Bitter-Regular.woff';
+import BitterRegular2 from '../../public/fonts/Bitter-Regular.woff2';
+import MontserratRegular from '../../public/fonts/Montserrat-Regular.woff';
+import MontserratRegular2 from '../../public/fonts/Montserrat-Regular.woff2';
+import MontserratMedium from '../../public/fonts/Montserrat-Medium.woff';
+import MontserratMedium2 from '../../public/fonts/Montserrat-Medium.woff2';
+import MontserratSemiBold from '../../public/fonts/Montserrat-SemiBold.woff';
+import MontserratSemiBold2 from '../../public/fonts/Montserrat-SemiBold.woff2';
+import MontserratBold from '../../public/fonts/Montserrat-Bold.woff';
+import MontserratBold2 from '../../public/fonts/Montserrat-Bold.woff2';
 
 const GlobalStyle = createGlobalStyle`
     
@@ -20,17 +26,40 @@ const GlobalStyle = createGlobalStyle`
 
     // fonts
     @font-face {
-        font-family: 'Bitter';
-        src: local('Bitter'), local('Bitter'),
-        url(${Bitter2}) format('woff2'),
-        url(${Bitter}) format('woff');
-        font-weight: 300;
+        // BitterRegular
+        font-family: 'BitterRegular';
+        src: local('BitterRegular'), local('BitterRegular'),
+        url(${BitterRegular2}) format('woff2'),
+        url(${BitterRegular}) format('woff');
+        font-weight: 400;
         font-style: normal;
-        font-family: 'Montserrat';
-        src: local('Montserrat'), local('Montserrat'),
-        url(${Montserrat2}) format('woff2'),
-        url(${Montserrat}) format('woff');
-        font-weight: 300;
+        // MontSerratRegular
+        font-family: 'MontserratRegular';
+        src: local('MontserratRegular'), local('MontserratRegular'),
+        url(${MontserratRegular2}) format('woff2'),
+        url(${MontserratRegular}) format('woff');
+        font-weight: 400;
+        font-style: normal;
+        // MontSerratMedium
+        font-family: 'MontserratMedium';
+        src: local('MontserratMedium'), local('MontserratMedium'),
+        url(${MontserratMedium2}) format('woff2'),
+        url(${MontserratMedium}) format('woff');
+        font-weight: 400;
+        font-style: normal;
+        // MontSerratSemiBold
+        font-family: 'MontserratSemiBold';
+        src: local('MontserratSemiBold'), local('MontserratSemiBold'),
+        url(${MontserratSemiBold2}) format('woff2'),
+        url(${MontserratSemiBold}) format('woff');
+        font-weight: 400;
+        font-style: normal;
+        // MontSerratBold
+        font-family: 'MontserratBold';
+        src: local('MontserratBold'), local('MontserratBold'),
+        url(${MontserratBold2}) format('woff2'),
+        url(${MontserratBold}) format('woff');
+        font-weight: 400;
         font-style: normal;
     }
 `;
