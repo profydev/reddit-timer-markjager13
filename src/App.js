@@ -4,9 +4,9 @@ import { ThemeProvider } from 'styled-components';
 import { Normalize } from 'styled-normalize';
 import GlobalStyle from './GlobalStyle';
 import theme from './theme';
-import Header from './components/Header';
-import Landing from './components/Landing';
-import Search from './components/Search';
+import Header from './components/Header/Header';
+import Landing from './components/Landing/Landing';
+import Search from './components/Search/Search';
 
 function App() {
   return (

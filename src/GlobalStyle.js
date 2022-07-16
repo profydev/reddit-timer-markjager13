@@ -1,6 +1,16 @@
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    width: 1440px;
+  }
+
   /** Montserrat Regular **/
   @font-face {
     font-family: "Montserrat";
