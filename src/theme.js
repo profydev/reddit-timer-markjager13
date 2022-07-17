@@ -1,6 +1,17 @@
 const theme = {
   color: {
-    text: '#93918f',
+    default: '#93918F',
+    headline: '#000000',
+    link: {
+      default: {
+        normal: '#0087FF',
+        hover: '#1360A4',
+      },
+      nav: {
+        normal: '#636363',
+        hover: '#000000',
+      },
+    },
   },
   font: {
     family: {

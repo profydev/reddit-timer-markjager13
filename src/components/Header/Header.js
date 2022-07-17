@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyledHeader, StyledNavList, StyledNavItem } from './Header.styled';
+import { DEFAULT_SUBREDDIT } from '../../constants';
 
 function Header() {
   return (
@@ -7,16 +8,16 @@ function Header() {
       <nav>
         <StyledNavList>
           <StyledNavItem>
-            <a href="/"><img alt="logo" src="logo.png" /></a>
+            <a href="/"><img alt="logo" src="logo.svg" /></a>
           </StyledNavItem>
           <StyledNavItem>
-            <a href="/search">Search</a>
+            <a href={`/search/${DEFAULT_SUBREDDIT}`}>Search</a>
           </StyledNavItem>
           <StyledNavItem>
-            <a href="/">How it works</a>
+            <a href="/#how-it-works">How it works</a>
           </StyledNavItem>
           <StyledNavItem>
-            <a href="/">About</a>
+            <a href="/#about">About</a>
           </StyledNavItem>
         </StyledNavList>
       </nav>

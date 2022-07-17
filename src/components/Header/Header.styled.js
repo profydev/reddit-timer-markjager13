@@ -26,6 +26,11 @@ export const StyledNavItem = styled.li`
 
     a {
         text-decoration: none;
+        color: ${(props) => props.theme.color.link.nav.normal};
+        
+        &:hover {
+            color: ${(props) => props.theme.color.link.nav.hover};
+        }
     }
 
 `;
